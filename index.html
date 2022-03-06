@@ -35,6 +35,14 @@
             </div>
             <button onclick="myFunction2()" id="submitbtn2" type="button" class="btn btn-primary">Submit</button>
         </form>
+
+        <form>
+            <div class="form-group3">
+                <label for="exampleInputEmail13">Human minutes youd like to convert.</label>
+                <input type="text" class="form-control" id="mins" aria-describedby="mins" value="0" placeholder="0">
+            </div>
+            <button onclick="myFunction3()" id="submitbtn3" type="button" class="btn btn-primary">Submit</button>
+        </form>
     </div>
 
     <!-- <div style="width:50%;margin:auto;margin-top:10%;padding:20px;" class="shadow-lg">
@@ -87,6 +95,26 @@
 
     }
 
+    function myFunction3() {
+
+
+        try {
+            // Try to run this code 
+            let mins = parseInt(document.getElementById("mins").value);
+
+            console.log(mins);
+            if (isNumber(mins)) {
+                alert(mins + " amount of minutes in Arushi years is " + mins / 8941320);
+            } else {
+                alert(mins + "Is an invalid number! try again! the Arushi Math is not possible....");
+            }
+        } catch (err) {
+            // if any error, Code throws the error
+            console.log(err);
+        }
+
+    }
+
     function isNumber(n) {
         return !isNaN(parseFloat(n)) && !isNaN(n - 0);
     }
@@ -96,6 +124,10 @@
 <style type="text/css">
     .alert {
         display: none;
+    }
+
+    button{
+        margin-top:10px;
     }
 </style>
 
