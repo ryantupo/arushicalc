@@ -27,7 +27,25 @@
             </div>
             <button onclick="myFunction()" id="submitbtn" type="submit" class="btn btn-primary">Submit</button>
         </form>
+
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Human days youd like to convert.</label>
+                <input type="text" class="form-control" id="days" aria-describedby="days" value="0" placeholder="0">
+            </div>
+            <button onclick="myFunction2()" id="submitbtn2" type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
+
+    <!-- <div style="width:50%;margin:auto;margin-top:10%;padding:20px;" class="shadow-lg">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Human days youd like to convert.</label>
+                <input type="text" class="form-control" id="days" aria-describedby="days" value="0" placeholder="0">
+            </div>
+            <button onclick="myFunction2()" id="submitbtn" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div> -->
 
 
 
@@ -38,11 +56,25 @@
     function myFunction() {
         let years = parseInt(document.getElementById("years").value);
 
-        if(isNumber(years)) {
+        if (isNumber(years)) {
 
             alert(years + "Arushi years is " + years / 17);
-        }else{
+        } else {
             alert(years + "Is an invalid number! try again! the Arushi Math is not possible....");
+        }
+        console.log(years);
+
+
+    }
+
+    function myFunction() {
+        let days = parseInt(document.getElementById("days").value);
+
+        if (isNumber(days)) {
+
+            alert(days + " amount of days in Arushi years is " + day / 6205);
+        } else {
+            alert(days + "Is an invalid number! try again! the Arushi Math is not possible....");
         }
         console.log(years);
 
